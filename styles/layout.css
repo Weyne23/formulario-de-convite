@@ -1,0 +1,50 @@
+#app {
+    grid-template-columns: 32.78% 67.22%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside {
+    background-image: url("../assets/Background.png");
+    max-height: 45.5rem;
+    max-width: 25rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: .75rem;
+    margin-block: .875rem;
+    margin-inline: .875rem 0;
+    
+
+    h1 {
+        font: var(--text-logo);
+        color: var(--color-pink);
+    }
+
+    p {
+        font: 100 1rem/normal var(--font-family-open-sans);
+    }
+
+    header {
+        margin: 1.25rem;
+
+        img {
+            height: 3rem;
+            width: 2.866rem;
+        }
+    }
+}
+
+main {
+    overflow: auto;
+    background-color: var(--color-shape-body);
+    margin: .875rem;
+    border-radius: .75rem;
+    padding-block: 5rem;
+    padding-inline: 6rem;
+
+    h2 {
+        font: var(--text-h2);
+        margin-bottom: 2.5rem;
+    }
+}

@@ -1,0 +1,7 @@
+.grid {
+    display: grid;
+}
+
+.text-mb {
+    font: var(--text-md);
+}

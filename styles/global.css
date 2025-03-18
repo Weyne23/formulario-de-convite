@@ -50,6 +50,8 @@
 body{
     background-color: var(--color-shape-background);
     color: var(--color-text-heading);
+    display: grid;
+    justify-self: center;
 }
 
 img {

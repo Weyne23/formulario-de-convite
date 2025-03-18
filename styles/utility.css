@@ -2,6 +2,22 @@
     display: grid;
 }
 
+.flex {
+    display: flex;
+}
+
+.grid-coluns-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.gap-16 {
+    gap: 1rem;
+}
+
 .text-mb {
     font: var(--text-md);
+}
+
+.text-sm {
+    font: var(--text-sm);
 }

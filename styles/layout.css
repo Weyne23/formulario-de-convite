@@ -1,5 +1,5 @@
 #app {
-    grid-template-columns: 32.78% 67.22%;
+    grid-template-columns: 25.875rem auto;
 
     height: 100vh;
     overflow: hidden;
@@ -7,10 +7,9 @@
 
 aside {
     background-image: url("../assets/Background.png");
-    max-height: 45.5rem;
-    max-width: 25rem;
+    width: 25rem;
+    height: 45.5rem;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
     border-radius: .75rem;
     margin-block: .875rem;
     margin-inline: .875rem 0;
@@ -42,6 +41,7 @@ main {
     border-radius: .75rem;
     padding-block: 5rem;
     padding-inline: 6rem;
+    min-width: 51.52rem;
 
     h2 {
         font: var(--text-h2);

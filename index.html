@@ -20,8 +20,72 @@
         </aside>
         <main>
             <h2>Crie seu convite</h2>
-            <form action="post" enctype="multipart/form-data">
-                
+            <form action="post" enctype="multipart/form-data" class="text-sm">
+                <fieldset>
+                    
+                    <legend>
+                        <img src="assets/icons/calendar.svg" alt="calendario">Sobre o evento
+                    </legend>
+                    <div class="input-wrapper grid">
+                        <label for="event-name">Título</label>
+                        <input 
+                            type="text" 
+                            name="event-name" 
+                            id="event-name"
+                            placeholder="Nome do evento">
+                    </div>
+
+                    <div class="grid grid-coluns-2 gap-16">
+                        <div class="input-wrapper grid">
+                            <label for="date-begin-event">Início</label>
+                            <input type="date" name="date-begin-event" id="date-begin-event">
+                        </div>
+
+                        <div class="input-wrapper grid">
+                            <label for="date-end-event">Fim</label>
+                            <input type="date" name="date-end-event" id="date-end-event">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-coluns-2 gap-16">
+                        <div class="radio-wrapper grid">
+                            <label>Início</label>
+                            <div class="radio-wrapper flex">
+                                <div class="radio-inner">
+                                    <span class="radio-image"></span>
+                                    <input type="radio" name="type-event" id="in-person">
+                                    <label for="in-person">Presencial</label>
+                                </div>
+                                <div class="radio-inner">
+                                    <span class="radio-image"></span>
+                                    <input 
+                                        type="radio" name="type-event" id="online">
+                                    <label for="online">Online</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper grid">
+                            <label for="address-event">Local</label>
+                            <input 
+                                type="text" 
+                                name="address-event" 
+                                id="address-event"
+                                placeholder="Link ou endereço">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper grid">
+                        <label for="description-event">Título</label>
+                        <textarea 
+                            type="text" 
+                            name="description-event" 
+                            id="description-event" 
+                            cols="30" 
+                            rows="7"
+                            placeholder="Escreva sobre os detalhes do evento"></textarea>
+                    </div>
+                </fieldset>
             </form>
         </main>
     </div>

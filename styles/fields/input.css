@@ -18,3 +18,7 @@ label {
 
     color: var(--color-text-body);
 }
+
+input[type="datetime-local"] {
+    text-transform: uppercase;
+}

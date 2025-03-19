@@ -1,8 +1,7 @@
 input, 
 textarea, 
 select {
-    appearance: none;
-    width: 100%;
+    outline: none;
     padding: .75rem 1rem;
     border: 1px solid var(--color-input-stroke);
     border-radius: .5rem;
@@ -10,6 +9,48 @@ select {
     font: var(--text-md);
     color: var(--color-input-placeholder);
     background-color: var(--color-input-base);
+
+    &:not(:placeholder-shown):valid {
+        border: 1px solid var(--color-brand-light);
+        color: var(--color-text-heading);
+    }
+
+    &:invalid {
+        border: 1px solid var(--color-danger);
+
+        .error {
+            opacity: 1;
+        }
+    }
+
+    &:valid + .error {
+        opacity: 0;
+    }
+
+    /* &[required]::after {
+        content: "Teste2";
+        position: absolute;
+        right: .5rem;
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    &[required]::before {
+        content: "teste2";
+        position: absolute;
+        right: 1rem;
+        width: 1.25rem;
+        height: 1.25rem;
+    } */
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--color-danger);
+    height: 1rem;
+    margin-block: .4rem;
 }
 
 label {
@@ -21,4 +62,8 @@ label {
 
 input[type="datetime-local"] {
     text-transform: uppercase;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
 }

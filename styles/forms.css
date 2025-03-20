@@ -4,6 +4,8 @@ fieldset {
     display: grid;
     position: relative;
 
+    margin-bottom: 3rem;
+
     legend {
         font: var(--text-h3);
         display: flex;

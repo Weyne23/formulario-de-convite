@@ -10,9 +10,17 @@ select {
     color: var(--color-input-placeholder);
     background-color: var(--color-input-base);
 
-    &:not(:placeholder-shown):valid {
+    /* &:not(:placeholder-shown):valid {
         border: 1px solid var(--color-brand-light);
         color: var(--color-text-heading);
+    } */
+
+    &:not(:placeholder-shown) {
+        color: var(--color-text-heading);
+    }
+
+    &:focus {
+        border: 1px solid var(--color-brand-light);
     }
 
     &:invalid {

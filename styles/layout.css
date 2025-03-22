@@ -1,6 +1,6 @@
 #app {
     grid-template-columns: 25.875rem auto;
-
+    /* 25.875rem */
     height: 100vh;
     overflow: hidden;
 }

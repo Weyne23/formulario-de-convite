@@ -21,8 +21,7 @@
         <main>
             <h2>Crie seu convite</h2>
             <form action="post" enctype="multipart/form-data" class="text-sm">
-                <fieldset>
-                    
+                <fieldset class="about-event">
                     <legend>
                         <img src="assets/icons/calendar.svg" alt="calendario">Sobre o evento
                     </legend>
@@ -78,7 +77,7 @@
                                         </svg>          
                                     <input 
                                     type="radio" 
-                                    name="type-event" 
+                                    name="local-event" 
                                     value="in-person-event"
                                     id="in-person"
                                     checked
@@ -91,7 +90,7 @@
                                         </svg>                                        
                                     <input 
                                         type="radio" 
-                                        name="type-event" 
+                                        name="local-event" 
                                         value="online-event"
                                         id="online">
                                     <label for="online">Online</label>
@@ -131,65 +130,169 @@
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="customize-event">
                     
                     <legend><img src="assets/icons/paintbrush-vertical.svg" alt="pincel">Personalização</legend>
 
                     <div class="input-wrapper">
                         <label>Cor principal</label>
                         <div class="radio-color-wrapper">
-                            <input 
-                                type="radio"
-                                name="color-event"
-                                id="color-brand-light"
-                                >
-                            <input 
-                                type="radio"
-                                name="color-event"
-                                id="color-brand-light"
-                                >
-                            <input 
-                                type="radio"
-                                name="color-event"
-                                id="color-brand-light"
-                                >
-                            <input 
-                                type="radio"
-                                name="color-event"
-                                id="color-brand-light"
-                                >
-                            <input 
-                                type="radio"
-                                name="color-event"
-                                id="color-brand-light"
-                                >
-                            <input 
-                                type="radio"
-                                name="color-event"
-                                id="color-brand-light"
-                                >
-                            <input 
-                                type="radio"
-                                name="color-event"
-                                id="color-brand-light"
-                                >
-                            <input 
-                                type="radio"
-                                name="color-event"
-                                id="color-brand-light"
-                                >
-                            <input 
-                                type="radio"
-                                name="color-event"
-                                id="color-brand-light"
-                                >
-                            <input 
-                                type="radio"
-                                name="color-event"
-                                id="color-brand-light"
-                                >
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-brand-light-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-navy-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-purple-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-fuschia-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-pink-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-danger-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-orange-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-yellow-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-lime-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-green-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                            <div class="radio-color-wrapper-inner">
+                                <div class="radio-color-inner" id="color-cyan-div"></div>
+                                <input 
+                                    type="radio"
+                                    name="color-event"
+                                    id="color-brand-light-input"
+                                    >
+                            </div>
+                        </div>
+
+                        
+                        <label>Tema do evento</label>
+                        <div class="radio-theme">
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/aniversario.png" alt="Festa de Aniversário">
+                                <label for="birthday-party">Aniversário</label>
+                                <input name="type-event" type="radio" id="birthday-party">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/infantil.png" alt="Festa Infantil">
+                                <label for="children-party">Infantil</label>
+                                <input name="type-event" type="radio" id="children-party">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/formatura.png" alt="Festa de Formatura">
+                                <label for="graduation">Formatura</label>
+                                <input name="type-event" type="radio" id="graduation">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/casamento.png" alt="Festa de Casamento">
+                                <label for="marriage">Casamento</label>
+                                <input name="type-event" type="radio" id="marriage">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/cha-de-bebe.png" alt="Chá de Bebê">
+                                <label for="baby-shower">Chá de bebê</label>
+                                <input name="type-event" type="radio" id="baby-shower">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/cha-de-panela.png" alt="Festa de Aniversário">
+                                <label for="bridal-shower">Chá de panela</label>
+                                <input name="type-event" type="radio" id="bridal-shower">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/carnaval.png" alt="Festa de Aniversário">
+                                <label for="carnival">Carnaval</label>
+                                <input name="type-event" type="radio" id="carnival">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/pascoa.png" alt="páscoa">
+                                <label for="easter">Páscoa</label>
+                                <input name="type-event" type="radio" id="easter">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/sao-joao.png" alt="Festa Junina">
+                                <label for="june-festivals">São João</label>
+                                <input name="type-event" type="radio" id="june-festivals">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/halloween.png" alt="Halloween">
+                                <label for="halloween">Halloween</label>
+                                <input name="type-event" type="radio" id="halloween">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/natal.png" alt="Natal">
+                                <label for="christmas">Natal</label>
+                                <input name="type-event" type="radio" id="christmas">
+                            </div>
+                            <div class="radio-content-wrapper">
+                                <img src="assets/images/outros.png" alt="Outras festas">
+                                <label for="other-parties">Outro</label>
+                                <input name="type-event" type="radio" id="other-parties">
+                            </div>
                         </div>
                     </div>
+
                 </fieldset>
             </form>
         </main>

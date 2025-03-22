@@ -20,3 +20,14 @@ fieldset {
         }
     }
 }
+
+.customize-event {
+    label {
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .input-wrapper .radio-color-wrapper > div {
+        margin-bottom: 1.75rem;
+    }
+}

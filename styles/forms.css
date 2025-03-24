@@ -27,7 +27,9 @@ fieldset {
         margin-bottom: 1rem;
     }
 
-    .input-wrapper .radio-color-wrapper > div {
-        margin-bottom: 1.75rem;
+    row-gap: 1.75rem;
+
+    footer {
+        grid-template-columns: 11rem auto;
     }
 }

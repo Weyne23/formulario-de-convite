@@ -25,14 +25,6 @@ input[type="radio"]:hover {
     justify-content: center;
     border-radius: .5rem;
 
-    & input,
-    & input:focus,
-    & input:hover {
-        all: unset;
-        position: absolute;
-        inset: 0;
-    }
-
     &:has(:checked) {
         background-color: var(--color-shape-button);
 

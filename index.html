@@ -137,6 +137,96 @@
                     <header class="select-color">
                         <label>Cor principal</label>
                         <div class="input-wrapper">
+                            <div class="radio-color-wrapper">
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-brand-light-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-navy-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-purple-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-fuschia-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-pink-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-danger-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-orange-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-yellow-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-lime-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-green-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                                <div class="radio-color-wrapper-inner">
+                                    <div class="radio-color-inner" id="color-cyan-div"></div>
+                                    <input 
+                                        type="radio"
+                                        name="color-event"
+                                        id="color-brand-light-input"
+                                        >
+                                </div>
+                            </div>
                         </div>
                     </header>
 
@@ -228,9 +318,84 @@
                         </div>
                     </footer>
                 </fieldset>
-                <fieldset>
-                    <legend><img src="assets/icons/contact.svg" alt=""> Dados para contato</legend>
+                <fieldset class="contact-details">
+                    <legend><img src="assets/icons/contact.svg" alt="icone de contato">Dados para contato</legend>
+                    <div class="input-wrapper grid">
+                        <label for="name-contact">Nome</label>
+                        <input 
+                            type="text"
+                            placeholder="Nome completo"
+                            required
+                            name="name-contact"
+                            id="name-contact">
+                        <div class="error">
+                            <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta vermelho">
+                            <span>Campo obrigatorio</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-coluns-2 gap-16">
+                        <div class="input-wrapper grid">
+                                <label for="contact-email">Email</label>
+                                <input 
+                                    type="email" 
+                                    name="contact-email" 
+                                    id="contact-email"
+                                    placeholder="example@example.com"
+                                    pattern=".+@.+\.com"
+                                    required>
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta vermelho">
+                                    <span>Preencha o email corretamente</span>
+                                </div>
+                        </div>
+
+                        <div class="input-wrapper grid">
+                            <label for="cantact-phone">Telefone</label>
+                            <input 
+                                type="tel"
+                                id="contact-phone"
+                                name="contact-phone"
+                                placeholder="(99) 99999-9999"
+                                pattern="\(\[0-9]{3}\)\[0-9]{5}-[0-9]{4}"
+                                required>
+                            <div class="error">
+                                <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta vermelho">
+                                <span>Preencha o telefone corretamente</span>
+                            </div>
+                        </div>
+                    </div>
                 </fieldset>
+
+                <div class="terms-wrapper grid">
+                    <div class="input-wrapper checkbox-wrapper flex">
+                        <input 
+                            type="checkbox"
+                            name="terms"
+                            id="terms"
+                            >
+                        <label for="terms">Li e concordo com os <a>Termos e Condições</a> e com a <a>Política de Privacidade</a></label>
+                    </div>
+                    <div class="input-wrapper checkbox-wrapper flex">
+                        <input 
+                            type="checkbox"
+                            name="email-promo-atualizations"
+                            id="email-promo-atualizations"
+                            >
+                        <label for="email-promo-atualizations">Aceito receber atualizações e promoções por e-mail</label>
+                    </div>
+                    <div class="input-wrapper checkbox-wrapper flex">
+                        <input 
+                            type="checkbox"
+                            name="sms-promo-atualizations"
+                            id="sms-promo-atualizations"
+                            >
+                        <label for="sms-promo-atualizations">Aceito receber atualizações e promoções por SMS</label>
+                    </div>
+                </div>
+                <div class="actions-wrapper">
+                    <button class="btn-primary" type="submit"><img src="assets/icons/ticket.svg" alt="ticket"> Gerar convite</button>
+                </div>
             </form>
         </main>
     </div>

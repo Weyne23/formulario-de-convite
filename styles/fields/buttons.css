@@ -1,0 +1,18 @@
+.actions-wrapper button{
+    all: unset;
+    font: var(--text-md);
+    font-weight: 600;
+    display: flex;
+    margin-left: auto;
+    background-color: var(--color-brand-dark);
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 2rem;
+    color: var(--color-text-heading);
+    border-radius: .5rem;
+
+    &:hover {
+        background-color: var(--color-brand-mid);
+    }
+}

@@ -19,6 +19,11 @@
         border-radius: .5rem;
     }
 
+    input::file-selector-button:hover {
+        background-color: var(--color-shape-hover);
+        color: var(--color-shape-hover);
+    }
+
     input::before {
         content: "";
         position: absolute;
